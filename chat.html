@@ -35,19 +35,25 @@
             <button id="send-button" class="button send-button">Send</button>
         </div>
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#config-web-app -->
+
     <script>
-      // Initialize Firebase
-      var config = {
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
         apiKey: "AIzaSyD19ccr603yUarAw0RnEXIUAqkB_DbzidA",
         authDomain: "snappy-chat-3a813.firebaseapp.com",
         databaseURL: "https://snappy-chat-3a813.firebaseio.com",
         projectId: "snappy-chat-3a813",
         storageBucket: "snappy-chat-3a813.appspot.com",
-        messagingSenderId: "45027166197"
+        messagingSenderId: "45027166197",
+        appId: "1:45027166197:web:d282ed96b305c2a9"
       };
-      firebase.initializeApp(config);
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
     </script>
 
     <script type="text/javascript" src="functions.js"></script>
